@@ -49,7 +49,6 @@ func main() {
 	fmt.Printf("Результат выполнения операции: %.2f\n", res)
 
 }
-
 func factorial(num int) int {
 	if num == 1 || num == 0 {
 		return num
