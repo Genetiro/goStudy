@@ -27,7 +27,7 @@ func Configg() {
 	flag.StringVar(&conf.some_app_key, "Some_app_key", "testkey", "Some_app_key")
 
 	flag.Parse()
-	flconf(conf.port, conf.db_url, conf.jaeger_url, conf.sentry_url, conf.kafka_broker, conf.some_app_id, conf.some_app_key)
+	//flconf(conf.port, conf.db_url, conf.jaeger_url, conf.sentry_url, conf.kafka_broker, conf.some_app_id, conf.some_app_key)
 
 }
 
