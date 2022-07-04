@@ -8,10 +8,16 @@ import (
 type dz []byte
 
 func (dz) Write(p []byte) (n int, err error) {
-	return
+	if err != nil {
+		fmt.Println(err)
+	}
+	return len(p), nil
 }
 func (dz) Read(p []byte) (n int, err error) {
-	return
+	if err != nil {
+		fmt.Println(err)
+	}
+	return len(p), io.EOF
 
 }
 
