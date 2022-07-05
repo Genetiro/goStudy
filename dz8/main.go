@@ -2,9 +2,9 @@ package main
 
 import (
 	conf "conf/conff/dz8/conff"
+	"fmt"
 )
 
 func main() {
-	conf.Configg()
-	//conf.Flconf(port int, db_url, jaeger_url, sentry_url, kafka_broker, some_app_id, some_app_key string)
+	fmt.Println(conf.GetEnv(DB_URL))
 }
